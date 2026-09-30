@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#2f8f46">
+<title>حلال أبو خالد 2026</title>
+<style>
+:root{--green:#2f8f46;--green2:#3ca657;--light:#f4fbf5;--card:#fff;--text:#17351f;--muted:#65756a;--danger:#c62828;--warn:#e69b00;--line:#d9e7dc;--shadow:0 5px 18px #1c5b2b18}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Tahoma,Arial,sans-serif;background:var(--light);color:var(--text)}
+body.dark{--light:#101612;--card:#18221b;--text:#edf7ef;--muted:#aab9ae;--line:#304536;--shadow:0 5px 18px #0005}
+button,input,select,textarea{font:inherit}button{cursor:pointer}
+.app{max-width:1100px;margin:auto;padding:14px}.header{background:linear-gradient(135deg,var(--green),var(--green2));color:#fff;border-radius:22px;padding:18px 20px;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:space-between;gap:12px}.brand h1{margin:0;font-size:28px}.brand p{margin:5px 0 0;opacity:.9}.top-actions{display:flex;gap:8px}.iconbtn{border:0;background:#ffffff22;color:#fff;border-radius:13px;padding:10px 13px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0}.stat,.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow)}.stat b{font-size:25px;display:block;color:var(--green)}.stat span{color:var(--muted);font-size:13px}
+.profit{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}.profit .card b{font-size:20px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}.navbtn{border:1px solid var(--line);background:var(--card);color:var(--text);padding:17px 10px;border-radius:17px;font-weight:700;box-shadow:var(--shadow);min-height:72px}.navbtn:active{transform:scale(.98)}
+.page{display:none}.page.active{display:block}.pagehead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:4px 0 13px}.pagehead h2{margin:0}.back{background:var(--green);color:#fff;border:0;border-radius:14px;padding:12px 20px;font-weight:700}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.primary{background:var(--green);color:#fff;border:0;border-radius:13px;padding:11px 16px;font-weight:700}.secondary{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:13px;padding:11px 16px}.danger{background:#fff0f0;color:var(--danger);border:1px solid #f0caca;border-radius:13px;padding:9px 13px}.dark .danger{background:#321b1b}.form{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.field label{display:block;font-size:13px;color:var(--muted);margin-bottom:5px}.field input,.field select,.field textarea{width:100%;padding:11px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--text)}.field textarea{min-height:90px}.wide{grid-column:1/-1}.hidden{display:none!important}.list{display:grid;gap:10px}.item{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:14px;box-shadow:var(--shadow)}.itemhead{display:flex;justify-content:space-between;gap:8px;align-items:center}.item h3{margin:0 0 8px}.muted{color:var(--muted)}.pill{display:inline-block;padding:4px 8px;border-radius:99px;background:#e9f7ed;color:var(--green);font-size:12px;font-weight:700}.dark .pill{background:#1c3a24}.warn{color:#9a6700;background:#fff4cf}.dark .warn{background:#4b3a13;color:#ffd86a}.bad{color:#b71c1c;background:#ffe5e5}.dark .bad{background:#461d1d;color:#ff9c9c}.mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}.mini{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:11px}.mini b{display:block;font-size:19px;color:var(--green)}.searchrow{display:flex;gap:8px;margin-bottom:12px}.searchrow input{flex:1;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--text)}.confirm{position:fixed;inset:0;background:#0008;display:none;align-items:center;justify-content:center;z-index:50;padding:20px}.confirm.show{display:flex}.dialog{max-width:480px;width:100%;background:var(--card);border-radius:20px;padding:20px;box-shadow:0 20px 60px #0006}.dialog h3{margin-top:0}.dialog-actions{display:flex;gap:8px;justify-content:flex-start;margin-top:16px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#17351f;color:#fff;padding:12px 18px;border-radius:13px;display:none;z-index:60}.toast.show{display:block}.empty{text-align:center;color:var(--muted);padding:28px}.photo{width:150px;height:150px;object-fit:cover;border-radius:50%;display:block;margin:8px auto 16px;border:5px solid #e2f2e5}
+@media(max-width:760px){.stats,.profit{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.form{grid-template-columns:1fr}.mini-grid{grid-template-columns:repeat(2,1fr)}.brand h1{font-size:23px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="header">
+  <div class="brand"><h1>🐑 حلال أبو خالد</h1><p>إدارة ومتابعة الحلال</p></div>
+  <div class="top-actions"><button class="iconbtn" onclick="toggleDark();showToast(document.body.classList.contains('dark')?'تم تشغيل الوضع الليلي 🌙':'تم تشغيل الوضع النهاري ☀️')">🌙 / ☀️</button><button class="iconbtn" onclick="openPage('about')">👤</button></div>
+</header>
+
+<div id="home" class="page active">
+  <section class="stats">
+    <div class="stat"><b id="sHerd">0</b><span>عدد الحلال الحالي</span></div>
+    <div class="stat"><b id="sEwes">0</b><span>النعاج المنتجة</span></div>
+    <div class="stat"><b id="sBirths">0</b><span>المواليد الحالي</span></div>
+    <div class="stat"><b id="sAlerts">0</b><span>التنبيهات</span></div>
+  </section>
+  <section class="profit">
+    <div class="card"><b id="sSales">0 ريال</b><span class="muted">إجمالي البيع</span></div>
+    <div class="card"><b id="sPurchases">0 ريال</b><span class="muted">إجمالي المشتريات</span></div>
+    <div class="card"><b id="sExpenses">0 ريال</b><span class="muted">إجمالي المصاريف</span></div>
+    <div class="card"><b id="sProfit">0 ريال</b><span class="muted">الربح / الخسارة</span></div>
+  </section>
+  <div class="grid">
+    <button class="navbtn" onclick="openPage('herd')">🐑 سجل القطيع</button>
+    <button class="navbtn" onclick="openPage('births')">👶 المواليد</button>
+    <button class="navbtn" onclick="openPage('deaths')">☠️ النفوق</button>
+    <button class="navbtn" onclick="openPage('purchases')">🛒 المشتريات</button>
+    <button class="navbtn" onclick="openPage('expenses')">💰 المصاريف</button>
+    <button class="navbtn" onclick="openPage('sales')">💵 البيع</button>
+    <button class="navbtn" onclick="openPage('vaccines')">💉 التطعيمات</button>
+    <button class="navbtn" onclick="openPage('inventory')">📦 جرد الحلال</button>
+    <button class="navbtn" onclick="openPage('eweReport')">📋 تقرير النعاج</button>
+    <button class="navbtn" onclick="openPage('birthReport')">📊 تقرير المواليد</button>
+    <button class="navbtn" onclick="openPage('alerts')">🔔 التنبيهات</button>
+    <button class="navbtn" onclick="openPage('production')">🏆 إنتاج النعاج</button>
+    <button class="navbtn" onclick="openPage('season')">📅 موسم الولادات</button>
+    <button class="navbtn" onclick="openPage('profit')">📈 الربح والخسارة</button>
+    <button class="navbtn" onclick="openPage('summary')">📋 الملخص</button>
+    <button class="navbtn" onclick="openPage('activity')">🕘 سجل الحركة</button>
+    <button class="navbtn" onclick="openPage('backup')">💾 النسخة الاحتياطية</button>
+    <button class="navbtn" onclick="openPage('buyers')">👥 سجل المشترين</button>
+    <button class="navbtn" onclick="openPage('treatments')">💊 سجل العلاجات</button>
+    <button class="navbtn" onclick="toggleDark();showToast(document.body.classList.contains('dark')?'تم تشغيل الوضع الليلي 🌙':'تم تشغيل الوضع النهاري ☀️')">🌙☀️ ليلي / نهاري</button>
+    <button class="navbtn" onclick="openPage('about')">👤 نبذة عن صاحب البرنامج</button>
+  </div>
+</div>
+
+<div id="herd" class="page"><div class="pagehead"><h2>🐑 سجل القطيع</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div>
+<div class="mini-grid"><div class="mini"><b id="herdCount">0</b>عدد الحلال</div><div class="mini"><b id="eweCount">0</b>النعاج المنتجة</div><div class="mini"><b id="lateCount">0</b>متأخرة</div><div class="mini"><b id="deliveredCount">0</b>والدة</div></div>
+<div class="actions"><button class="primary" onclick="showForm('eweForm')">➕ إضافة نعجة</button></div>
+<div class="searchrow"><input id="herdSearch" placeholder="🔎 بحث برقم النعجة" oninput="renderHerd()"></div>
+<div id="eweForm" class="card hidden"><h3>إضافة / تعديل نعجة</h3><div class="form">
+<div class="field"><label>رقم النعجة</label><input id="eweNo"></div><div class="field"><label>العمر عند التسجيل</label>
+<select id="eweAgeMonths">
+<option value="1">شهر</option>
+<option value="2">شهرين</option>
+<option value="3">3 أشهر</option>
+<option value="4">4 أشهر</option>
+<option value="5">5 أشهر</option>
+<option value="6">6 أشهر</option>
+<option value="7">7 أشهر</option>
+<option value="8">8 أشهر</option>
+<option value="9">9 أشهر</option>
+<option value="10">10 أشهر</option>
+<option value="11">11 شهر</option>
+<option value="12">12 شهر</option>
+</select></div>
+<div class="field"><label>الحالة</label><select id="eweStatus"><option>جيدة</option><option>تعبانة</option></select></div><div class="field"><label>تاريخ التسجيل</label><input id="eweDate" type="date"></div>
+</div><div class="actions" style="margin-top:10px"><button class="primary" onclick="saveEwe()">💾 حفظ</button><button class="secondary" onclick="hideForm('eweForm')">إلغاء</button></div></div>
+<div id="herdList" class="list"></div></div>
+
+<div id="births" class="page"><div class="pagehead"><h2>👶 المواليد</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div>
+<div class="mini-grid"><div class="mini"><b id="birthLive">0</b>إجمالي المواليد الحالي</div><div class="mini"><b id="ramLive">0</b>عدد الطليان</div><div class="mini"><b id="eweKidLive">0</b>عدد الرخال</div><div class="mini"><b id="birthThisMonth">0</b>مواليد هذا الشهر</div></div>
+<div class="actions"><button class="primary" onclick="showForm('birthForm')">➕ إضافة ولادة</button></div>
+<div id="birthForm" class="card hidden"><h3>إضافة ولادة</h3><div class="form">
+<div class="field"><label>رقم الأم</label><input id="bMother"></div><div class="field"><label>تاريخ الولادة</label><input id="bDate" type="date"></div>
+<div class="field"><label>عدد الطليان</label><input id="bRams" type="number" min="0" value="0"></div><div class="field"><label>عدد الرخال</label><input id="bEwes" type="number" min="0" value="0"></div>
+<div class="field"><label>وصف المواليد</label><input id="bDesc" placeholder="مثال: رخلتين وطلي"></div>
+<div class="field"><label>ملاحظة</label><input id="bNote"></div></div>
+<p class="muted">الأزرار الجاهزة: طلي — رخلة — طليان — رخلتين — طلي ورخلة، ويمكنك كتابة أي عدد في الخانات.</p>
+<div class="actions"><button class="secondary" onclick="quickBirth(1,0,'طلي')">طلي</button><button class="secondary" onclick="quickBirth(0,1,'رخلة')">رخلة</button><button class="secondary" onclick="quickBirth(2,0,'طليان')">طليان</button><button class="secondary" onclick="quickBirth(0,2,'رخلتين')">رخلتين</button><button class="secondary" onclick="quickBirth(1,1,'طلي ورخلة')">طلي ورخلة</button></div>
+<div class="actions"><button class="primary" onclick="saveBirth()">💾 حفظ الولادة</button><button class="secondary" onclick="hideForm('birthForm')">إلغاء</button></div></div>
+<div id="birthList" class="list"></div></div>
+
+<div id="deaths" class="page"><div class="pagehead"><h2>☠️ النفوق</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div>
+<div class="mini-grid"><div class="mini"><b id="deathTotal">0</b>إجمالي النفوق</div><div class="mini"><b id="deathMonth">0</b>نفوق هذا الشهر</div><div class="mini"><b id="deathYoung">0</b>نفوق مواليد</div><div class="mini"><b id="deathEwes">0</b>نفوق نعاج</div></div>
+<div class="actions"><button class="primary" onclick="showForm('deathForm')">➕ تسجيل نفوق</button></div>
+<div id="deathForm" class="card hidden"><h3>تسجيل نفوق</h3><div class="form">
+<div class="field"><label>النوع</label><select id="dType" onchange="deathTypeChanged()"><option>نعجة</option><option>طلي</option><option>رخلة</option><option>فحل</option><option>مواليد</option></select></div>
+<div class="field"><label>التاريخ</label><input id="dDate" type="date"></div>
+<div id="dEweFields" class="field"><label>رقم الحيوان / الأم</label><input id="dMother"></div>
+<div id="dRamField" class="field"><label>عدد الطليان النافقة</label><input id="dRams" type="number" min="0" value="1"></div>
+<div id="dEweKidField" class="field"><label>عدد الرخال النافقة</label><input id="dEwes" type="number" min="0" value="0"></div>
+<div class="field"><label>العدد</label><input id="dCount" type="number" min="1" value="1"></div>
+<div class="field wide"><label>سبب النفوق (اختياري)</label><input id="dReason"></div>
+</div><div class="actions"><button class="primary" onclick="saveDeath()">💾 حفظ النفوق</button><button class="secondary" onclick="hideForm('deathForm')">إلغاء</button></div></div>
+<div id="deathList" class="list"></div></div>
+
+<div id="purchases" class="page"><div class="pagehead"><h2>🛒 المشتريات</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div>
+<div class="mini-grid"><div class="mini"><b id="purchaseTotal">0</b>إجمالي المشتريات</div><div class="mini"><b id="purchaseMonth">0</b>هذا الشهر</div><div class="mini"><b id="purchaseYear">0</b>هذه السنة</div><div class="mini"><b id="purchaseCount">0</b>عدد العمليات</div></div>
+<div class="actions"><button class="primary" onclick="showForm('purchaseForm')">➕ إضافة مشتريات</button><button class="secondary" onclick="archiveYear('purchases')">📦 أرشفة السنة</button></div>
+<div id="purchaseForm" class="card hidden"><h3>إضافة مشتريات</h3><div class="form"><div class="field"><label>النوع</label><select id="pType" onchange="otherToggle('pType','pOther')"><option>علف</option><option>شعير</option><option>مكعبات</option><option>خبز</option><option>شبوك</option><option>معالف</option><option>موية</option><option>أخرى</option></select></div><div id="pOther" class="field hidden"><label>اكتب النوع</label><input id="pOtherText"></div><div class="field"><label>الكمية</label><input id="pQty" type="number" min="0"></div><div class="field"><label>سعر الوحدة</label><input id="pPrice" type="number" min="0" step="0.01"></div><div class="field"><label>التاريخ</label><input id="pDate" type="date"></div><div class="field"><label>ملاحظة</label><input id="pNote"></div></div><div class="card" style="margin-top:10px"><b>الإجمالي: <span id="pCalc">0</span> ريال</b></div><div class="actions"><button class="primary" onclick="savePurchase()">💾 حفظ</button><button class="secondary" onclick="hideForm('purchaseForm')">إلغاء</button></div></div>
+<div id="purchaseList" class="list"></div></div>
+
+<div id="expenses" class="page"><div class="pagehead"><h2>💰 المصاريف</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div>
+<div class="mini-grid"><div class="mini"><b id="expenseTotal">0</b>إجمالي المصاريف</div><div class="mini"><b id="expenseMonth">0</b>هذا الشهر</div><div class="mini"><b id="expenseYear">0</b>هذه السنة</div><div class="mini"><b id="expenseCount">0</b>عدد العمليات</div></div>
+<div class="actions"><button class="primary" onclick="showForm('expenseForm')">➕ إضافة مصروف</button><button class="secondary" onclick="archiveYear('expenses')">📦 أرشفة السنة</button></div>
+<div id="expenseForm" class="card hidden"><h3>إضافة مصروف</h3><div class="form"><div class="field"><label>النوع</label><select id="xType" onchange="otherToggle('xType','xOther')"><option>علاج</option><option>راتب العامل</option><option>بيطري</option><option>نقل</option><option>صيانة</option><option>كهرباء</option><option>وقود</option><option>أخرى</option></select></div><div id="xOther" class="field hidden"><label>اكتب النوع</label><input id="xOtherText"></div><div class="field"><label>المبلغ</label><input id="xAmount" type="number" min="0" step="0.01"></div><div class="field"><label>التاريخ</label><input id="xDate" type="date"></div><div class="field wide"><label>ملاحظة</label><input id="xNote"></div></div><div class="actions"><button class="primary" onclick="saveExpense()">💾 حفظ</button><button class="secondary" onclick="hideForm('expenseForm')">إلغاء</button></div></div>
+<div id="expenseList" class="list"></div></div>
+
+<div id="sales" class="page"><div class="pagehead"><h2>💵 البيع</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div>
+<div class="mini-grid"><div class="mini"><b id="salesTotal">0</b>إجمالي المبيعات</div><div class="mini"><b id="salesMonth">0</b>هذا الشهر</div><div class="mini"><b id="salesYear">0</b>هذه السنة</div><div class="mini"><b id="salesHeads">0</b>الرؤوس المباعة</div></div>
+<div class="actions"><button class="primary" onclick="showForm('saleForm')">➕ إضافة بيع</button></div>
+<div id="saleForm" class="card hidden"><h3>إضافة بيع</h3><div class="form"><div class="field"><label>النوع</label><select id="sType" onchange="saleTypeChanged()"><option>طلي</option><option>رخلة</option><option>نعجة</option><option>فحل</option></select></div><div class="field"><label>العدد</label><input id="sQty" type="number" min="1" value="1"></div><div id="sAnimalNo" class="field"><label>رقم الحيوان (للنعجة/الفحل)</label><input id="sNo"></div><div class="field"><label>سعر الواحد</label><input id="sPrice" type="number" min="0" step="0.01"></div><div class="field"><label>اسم المشتري</label><input id="sBuyer"></div><div class="field"><label>الجوال</label><input id="sPhone" inputmode="tel"></div><div class="field"><label>التاريخ</label><input id="sDate" type="date"></div></div><div class="card" style="margin-top:10px"><b>الإجمالي: <span id="sCalc">0</span> ريال</b></div><div class="actions"><button class="primary" onclick="saveSale()">💾 حفظ البيع</button><button class="secondary" onclick="hideForm('saleForm')">إلغاء</button></div></div>
+<div id="saleList" class="list"></div></div>
+
+<div id="vaccines" class="page"><div class="pagehead"><h2>💉 التطعيمات</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div>
+<div class="mini-grid"><div class="mini"><b id="vacDue">0</b>قريبة</div><div class="mini"><b id="vacLate">0</b>متأخرة</div><div class="mini"><b id="vacAll">0</b>كل السجلات</div><div class="mini"><b>7</b>تنبيه قبل أيام</div></div>
+<div class="actions"><button class="primary" onclick="showForm('vacForm')">➕ إضافة تطعيم</button></div>
+<div id="vacForm" class="card hidden"><h3>إضافة تطعيم</h3><div class="form"><div class="field"><label>الفئة</label><select id="vGroup"><option>الحلال كله</option><option>الطليان</option><option>الرخال</option><option>النعاج</option><option>طلي</option><option>رخلة</option><option>نعجة</option></select></div><div class="field"><label>نوع التطعيم</label><select id="vType" onchange="otherToggle('vType','vOther')"><option>هويجر</option><option>دموي</option><option>معوي</option><option>طاعون</option><option>جدري</option><option>دود</option><option>أخرى</option></select></div><div id="vOther" class="field hidden"><label>اسم التطعيم</label><input id="vOtherText"></div><div class="field"><label>رقم الحيوان إن كان فرديًا</label><input id="vNo"></div><div class="field"><label>التاريخ</label><input id="vDate" type="date"></div><div class="field wide"><label>ملاحظة</label><input id="vNote"></div></div><div class="actions"><button class="primary" onclick="saveVaccine()">💾 حفظ</button><button class="secondary" onclick="hideForm('vacForm')">إلغاء</button></div></div>
+<div id="vacList" class="list"></div></div>
+
+<div id="inventory" class="page"><div class="pagehead"><h2>📦 جرد الحلال</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div>
+<div class="card"><div class="form"><div class="field"><label>عدد النعاج</label><input id="iEwes" type="number" min="0" value="0"></div><div class="field"><label>عدد الطليان</label><input id="iRams" type="number" min="0" value="0"></div><div class="field"><label>عدد الرخال</label><input id="iYoungEwes" type="number" min="0" value="0"></div><div class="field"><label>عدد الفحول</label><input id="iBucks" type="number" min="0" value="0"></div><div class="field"><label>تاريخ الجرد</label><input id="iDate" type="date"></div><div class="field"><label>ملاحظة</label><input id="iNote"></div></div><div class="card" style="margin-top:10px"><b>المجموع الفعلي: <span id="iTotal">0</span></b> — <span id="iCompare"></span></div><div class="actions"><button class="primary" onclick="saveInventory()">💾 حفظ واعتماد الجرد</button></div></div><div id="inventoryList" class="list" style="margin-top:12px"></div></div>
+
+<div id="eweReport" class="page"><div class="pagehead"><h2>📋 تقرير النعاج</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div><div class="searchrow"><input id="eweReportSearch" placeholder="🔎 بحث برقم النعجة" oninput="renderEweReport()"></div><div id="eweReportList" class="list"></div></div>
+
+<div id="birthReport" class="page"><div class="pagehead"><h2>📊 تقرير المواليد</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div>
+<div class="mini-grid"><div class="mini"><b id="brLive">0</b>إجمالي المواليد الحالي</div><div class="mini"><b id="brRams">0</b>الطليان الحالي</div><div class="mini"><b id="brEwes">0</b>الرخال الحالي</div><div class="mini"><b id="brMonth">0</b>مواليد هذا الشهر</div><div class="mini"><b id="brDeathMonth">0</b>نفوق هذا الشهر</div><div class="mini"><b id="brMothers">0</b>أمهات ولدت هذا الشهر</div></div>
+<div class="actions"><select id="brPeriod" class="secondary" onchange="renderBirthReport()"><option value="month">هذا الشهر</option><option value="3m">آخر 3 أشهر</option><option value="6m">آخر 6 أشهر</option><option value="year">هذه السنة</option><option value="all">الكل</option></select></div>
+<div id="birthReportList" class="list"></div></div>
+
+<div id="alerts" class="page"><div class="pagehead"><h2>🔔 التنبيهات</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div>
+<div class="mini-grid"><div class="mini"><b id="aBirth">0</b>قرب الولادة</div><div class="mini"><b id="aLate">0</b>متأخرة</div><div class="mini"><b id="aVac">0</b>تطعيمات</div><div class="mini"><b id="aTotal">0</b>الإجمالي</div></div><div id="alertList" class="list"></div></div>
+
+<div id="production" class="page"><div class="pagehead"><h2>🏆 إنتاج النعاج</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div><div class="searchrow"><input id="prodSearch" placeholder="🔎 بحث برقم النعجة" oninput="renderProduction()"><select id="prodPeriod" onchange="renderProduction()"><option value="year">هذه السنة</option><option value="12m">آخر 12 شهر</option><option value="all">الكل</option></select></div><div id="productionList" class="list"></div></div>
+
+<div id="season" class="page"><div class="pagehead"><h2>📅 موسم الولادات</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div><div class="mini-grid"><div class="mini"><b id="seasonMonth">0</b>ولادات متوقعة هذا الشهر</div><div class="mini"><b id="seasonSoon">0</b>30 يوم أو أقل</div><div class="mini"><b id="seasonLate">0</b>متأخرة</div><div class="mini"><b id="seasonTotal">0</b>المنتظرة</div></div><div class="searchrow"><input id="seasonSearch" placeholder="🔎 بحث برقم النعجة" oninput="renderSeason()"></div><div id="seasonList" class="list"></div></div>
+
+<div id="profit" class="page"><div class="pagehead"><h2>📈 الربح والخسارة</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div><div class="actions"><select id="profitPeriod" class="secondary" onchange="renderProfit()"><option value="month">هذا الشهر</option><option value="3m">3 أشهر</option><option value="6m">6 أشهر</option><option value="year">هذه السنة</option><option value="all">الكل</option></select></div><div class="mini-grid"><div class="mini"><b id="prSales">0</b>المبيعات</div><div class="mini"><b id="prPurchases">0</b>المشتريات</div><div class="mini"><b id="prExpenses">0</b>المصاريف</div><div class="mini"><b id="prNet">0</b>صافي النتيجة</div></div><div id="profitMonths" class="list"></div></div>
+
+<div id="summary" class="page"><div class="pagehead"><h2>📋 الملخص</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div><div id="summaryBody" class="list"></div></div>
+
+<div id="activity" class="page"><div class="pagehead"><h2>🕘 سجل الحركة</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div><div class="actions"><select id="actPeriod" class="secondary" onchange="renderActivity()"><option value="today">اليوم</option><option value="month">هذا الشهر</option><option value="3m">3 أشهر</option><option value="6m">6 أشهر</option><option value="year">سنة</option><option value="all">الكل</option></select><select id="actType" class="secondary" onchange="renderActivity()"><option value="all">كل الحركات</option><option>مواليد</option><option>نفوق</option><option>بيع</option><option>مشتريات</option><option>مصاريف</option><option>تطعيم</option><option>جرد</option><option>نعجة</option></select></div><div class="searchrow"><input id="actSearch" placeholder="🔎 بحث برقم النعجة" oninput="renderActivity()"></div><div id="activityList" class="list"></div></div>
+
+<div id="backup" class="page"><div class="pagehead"><h2>💾 النسخة الاحتياطية</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div><div class="card"><p>أنشئ نسخة تحفظ جميع بيانات البرنامج، أو استعد نسخة سابقة. قبل الاستعادة ينشئ البرنامج نسخة أمان من بياناتك الحالية.</p><div class="actions"><button class="primary" onclick="downloadBackup()">⬇️ إنشاء نسخة احتياطية</button><label class="secondary">⬆️ استعادة نسخة <input id="backupFile" type="file" accept=".json" style="display:none" onchange="restoreBackup(event)"></label></div><p class="muted" id="lastBackup">لم يتم إنشاء نسخة احتياطية بعد.</p></div></div>
+
+<div id="buyers" class="page"><div class="pagehead"><h2>👥 سجل المشترين</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div><div class="mini-grid"><div class="mini"><b id="buyerCount">0</b>عدد المشترين</div><div class="mini"><b id="buyerSales">0</b>عمليات البيع</div><div class="mini"><b id="buyerTotal">0</b>إجمالي المبيعات</div><div class="mini"><b>⭐</b>مشتري دائم</div></div><div class="searchrow"><input id="buyerSearch" placeholder="🔎 بحث بالاسم أو الجوال" oninput="renderBuyers()"></div><div id="buyerList" class="list"></div></div>
+
+<div id="treatments" class="page"><div class="pagehead"><h2>💊 سجل العلاجات</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div><div class="actions"><button class="primary" onclick="showForm('treatmentForm')">➕ إضافة علاج</button></div><div class="searchrow"><input id="treatSearch" placeholder="🔎 بحث باسم العلاج" oninput="renderTreatments()"></div><div id="treatmentForm" class="card hidden"><h3>إضافة علاج</h3><div class="form"><div class="field"><label>اسم العلاج</label><input id="tName"></div><div class="field"><label>كم سانتي</label><input id="tDose" type="number" min="0" step="0.1"></div><div class="field"><label>طريقة الإعطاء</label><select id="tRoute"><option>لحم</option><option>تحت الجلد</option></select></div><div class="field"><label>ملاحظة</label><input id="tNote"></div></div><div class="actions"><button class="primary" onclick="saveTreatment()">💾 حفظ</button><button class="secondary" onclick="hideForm('treatmentForm')">إلغاء</button></div></div><div id="treatmentList" class="list"></div></div>
+
+<div id="about" class="page"><div class="pagehead"><h2>👤 نبذة عن صاحب البرنامج</h2><button class="back" onclick="goHome()">⬅ الرجوع للرئيسية</button></div><div class="card" style="text-align:center"><img class="photo" src="IMG_4132.jpeg" onerror="this.style.display='none'"><h2>عزيز مصلح الجهني</h2><h3>أبو خالد</h3><p>📱 0564554878</p><p class="muted">🐑 حلال أبو خالد — برنامج لإدارة ومتابعة الحلال.</p><p class="muted">الإصدار 1.0</p></div></div>
+
+</div>
+
+<div id="confirm" class="confirm"><div class="dialog"><h3 id="confirmTitle">تأكيد</h3><p id="confirmText"></p><div class="dialog-actions"><button class="secondary" onclick="closeConfirm()">إلغاء</button><button class="primary" id="confirmYes">تأكيد</button></div></div></div>
+<div id="toast" class="toast"></div>
+
+<script>
+const KEY='halalAbuKhalid2026';
+let data=JSON.parse(localStorage.getItem(KEY)||'null')||{ewes:[],births:[],deaths:[],purchases:[],expenses:[],sales:[],vaccines:[],inventory:[],treatments:[],activities:[],buyers:[],archives:[],meta:{lastBackup:''}};
+const today=()=>new Date().toISOString().slice(0,10);
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+const money=n=>Number(n||0).toLocaleString('ar-SA',{maximumFractionDigits:2});
+const save=()=>{localStorage.setItem(KEY,JSON.stringify(data));updateHome();renderCurrent()};
+function log(type,text){data.activities.unshift({id:uid(),type,text,date:new Date().toISOString()});}
+function showToast(t){const x=document.getElementById('toast');x.textContent=t;x.classList.add('show');setTimeout(()=>x.classList.remove('show'),2200)}
+function openPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');renderCurrent();scrollTo(0,0)}
+function goHome(){openPage('home')}
+function showForm(id){document.getElementById(id).classList.remove('hidden')}
+function hideForm(id){document.getElementById(id).classList.add('hidden')}
+function toggleDark(){document.body.classList.toggle('dark');localStorage.setItem('halalDark',document.body.classList.contains('dark'))}
+if(localStorage.getItem('halalDark')==='true')document.body.classList.add('dark');
+function confirmAction(title,text,fn){document.getElementById('confirmTitle').textContent=title;document.getElementById('confirmText').textContent=text;document.getElementById('confirmYes').onclick=()=>{closeConfirm();fn()};document.getElementById('confirm').classList.add('show')}
+function closeConfirm(){document.getElementById('confirm').classList.remove('show')}
+function otherToggle(selectId,otherId){document.getElementById(otherId).classList.toggle('hidden',document.getElementById(selectId).value!=='أخرى')}
+function dateObj(s){return new Date(s+'T12:00:00')}
+function diffDays(a,b){return Math.floor((dateObj(b)-dateObj(a))/86400000)}
+function addMonths(dateStr,n){const d=dateObj(dateStr);d.setMonth(d.getMonth()+n);return d.toISOString().slice(0,10)}
+function eweAgeText(e){
+  let baseMonths=Number(e.ageMonthsAtStart??e.ageMonths??((e.age||0)*12));
+  let baseDays=Number(e.ageDaysAtStart??e.days??0);
+  let elapsed=Math.max(0,diffDays(e.date,today()));
+  let totalDays=baseMonths*30+baseDays+elapsed;
+  let y=Math.floor(totalDays/360);
+  let rem=totalDays%360;
+  let m=Math.floor(rem/30);
+  let d=rem%30;
+  return `${y} سنة | ${m} شهر | ${d} يوم`;
+}
+function birthAgeText(start){let days=Math.max(0,diffDays(start,today()));let y=Math.floor(days/360),rem=days%360,m=Math.floor(rem/30),d=rem%30;if(y&&m&&d)return `${y} سنة، ${m} شهر، ${d} يوم`;if(y&&m)return `${y} سنة، ${m} شهر`;if(y&&d)return `${y} سنة، ${d} يوم`;if(y)return `${y} سنة`;if(m&&d)return `${m} شهر، ${d} يوم`;if(m)return `${m} شهر`;return `${d} يوم`;}
+
+function currentHerd(){return data.ewes.length + data.births.reduce((s,b)=>s+(b.rams||0)+(b.ewes||0),0) - data.deaths.reduce((s,d)=>s+(d.type==='مواليد'?(d.rams+d.ewes):d.count),0) - data.sales.reduce((s,x)=>s+x.qty,0)}
+function liveBirths(){let r=data.births.reduce((s,b)=>s+b.rams,0),e=data.births.reduce((s,b)=>s+b.ewes,0);for(const d of data.deaths)if(d.type==='مواليد'){r-=Number(d.rams||0);e-=Number(d.ewes||0)}for(const s of data.sales){if(s.type==='طلي')r-=Number(s.qty||0);if(s.type==='رخلة')e-=Number(s.qty||0)}return {rams:Math.max(0,r),ewes:Math.max(0,e),total:Math.max(0,r+e)}}
+function eweStats(e){const bs=data.births.filter(b=>String(b.mother)===String(e.no)).sort((a,b)=>b.date.localeCompare(a.date));const last=bs[0];let r=bs.reduce((s,b)=>s+b.rams,0),q=bs.reduce((s,b)=>s+b.ewes,0);let dr=data.deaths.filter(d=>d.type==='مواليد'&&String(d.mother)===String(e.no)).reduce((s,d)=>s+d.rams,0),dq=data.deaths.filter(d=>d.type==='مواليد'&&String(d.mother)===String(e.no)).reduce((s,d)=>s+d.ewes,0);return {bs,last,r,q,dr,dq,live:Math.max(0,r+q-dr-dq)}}
+function lateFor(e){const s=eweStats(e);if(!s.last)return null;const days=diffDays(s.last.date,today());return days>=210?days-210:null}
+function expectedFor(e){const s=eweStats(e);return s.last?addMonths(s.last.date,6):null}
+function updateHome(){const live=liveBirths(),sales=data.sales.reduce((s,x)=>s+x.total,0),pur=data.purchases.reduce((s,x)=>s+x.total,0),exp=data.expenses.reduce((s,x)=>s+x.amount,0),late=data.ewes.filter(e=>lateFor(e)!=null).length,alerts=buildAlerts().length;document.getElementById('sHerd').textContent=money(currentHerd());document.getElementById('sEwes').textContent=data.ewes.length;document.getElementById('sBirths').textContent=live.total;document.getElementById('sAlerts').textContent=alerts;document.getElementById('sSales').textContent=money(sales)+' ريال';document.getElementById('sPurchases').textContent=money(pur)+' ريال';document.getElementById('sExpenses').textContent=money(exp)+' ريال';document.getElementById('sProfit').textContent=money(sales-pur-exp)+' ريال';document.getElementById('herdCount').textContent=currentHerd();document.getElementById('eweCount').textContent=data.ewes.length;document.getElementById('lateCount').textContent=late;document.getElementById('deliveredCount').textContent=data.ewes.filter(e=>eweStats(e).last).length}
+function renderCurrent(){const id=document.querySelector('.page.active')?.id;if(id==='herd')renderHerd();if(id==='births')renderBirths();if(id==='deaths')renderDeaths();if(id==='purchases')renderPurchases();if(id==='expenses')renderExpenses();if(id==='sales')renderSales();if(id==='vaccines')renderVaccines();if(id==='inventory')renderInventory();if(id==='eweReport')renderEweReport();if(id==='birthReport')renderBirthReport();if(id==='alerts')renderAlerts();if(id==='production')renderProduction();if(id==='season')renderSeason();if(id==='profit')renderProfit();if(id==='summary')renderSummary();if(id==='activity')renderActivity();if(id==='buyers')renderBuyers();if(id==='treatments')renderTreatments();updateHome()}
+
+function saveEwe(){
+  const no=document.getElementById('eweNo').value.trim();
+  const date=document.getElementById('eweDate').value||today();
+  const ageMonthsAtStart=+document.getElementById('eweAgeMonths').value||1;
+  if(!no)return showToast('اكتب رقم النعجة');
+  if(data.ewes.some(e=>String(e.no)===no))return showToast('رقم النعجة مسجل مسبقًا');
+  data.ewes.push({
+    id:uid(),no,
+    status:document.getElementById('eweStatus').value,
+    date,ageMonthsAtStart,ageDaysAtStart:0
+  });
+  log('نعجة',`إضافة النعجة رقم ${no} بعمر ${ageMonthsAtStart} شهر`);
+  hideForm('eweForm');
+  save();
+  showToast(ageMonthsAtStart===12?'تم التسجيل — العمر سنة':'تمت إضافة النعجة');
+}
+function renderHerd(){const q=document.getElementById('herdSearch').value.trim();const list=data.ewes.filter(e=>!q||String(e.no).includes(q));document.getElementById('herdList').innerHTML=list.map(e=>{const late=lateFor(e),st=eweStats(e);return `<div class="item"><div class="itemhead"><h3>النعجة رقم ${e.no}</h3><span class="pill ${late!=null?'bad':''}">${late!=null?'🔴 متأخرة '+late+' يوم':st.last?'والدة':'غير والدة'}</span></div><p>العمر: <b>${eweAgeText(e)}</b> — الحالة: ${e.status}</p><p>آخر ولادة: ${st.last?st.last.date:'لا توجد'} — الولادات: ${st.bs.length} — إجمالي المواليد: ${st.r+st.q}</p><div class="actions"><button class="danger" onclick="deleteEwe('${e.id}')">🗑️ حذف</button></div></div>`}).join('')||'<div class="empty">لا توجد نعاج</div>'}
+function deleteEwe(id){const e=data.ewes.find(x=>x.id===id);confirmAction('تأكيد الحذف',`هل أنت متأكد من حذف النعجة رقم ${e.no}؟`,()=>{data.ewes=data.ewes.filter(x=>x.id!==id);log('نعجة',`تم حذف النعجة رقم ${e.no}`);save()})}
+
+function quickBirth(r,e,desc){document.getElementById('bRams').value=r;document.getElementById('bEwes').value=e;document.getElementById('bDesc').value=desc}
+function saveBirth(){const mother=document.getElementById('bMother').value.trim(),r=+document.getElementById('bRams').value||0,e=+document.getElementById('bEwes').value||0,date=document.getElementById('bDate').value||today();if(!mother||r+e<1)return showToast('أدخل رقم الأم وعدد المواليد');data.births.push({id:uid(),mother,rams:r,ewes:e,desc:document.getElementById('bDesc').value,date,note:document.getElementById('bNote').value});log('مواليد',`الأم ${mother}: ${r} طليان و${e} رخال`);hideForm('birthForm');save();showToast('تم تسجيل الولادة')}
+function renderBirths(){const live=liveBirths();document.getElementById('birthLive').textContent=live.total;document.getElementById('ramLive').textContent=live.rams;document.getElementById('eweKidLive').textContent=live.ewes;const now=today().slice(0,7);document.getElementById('birthThisMonth').textContent=data.births.filter(b=>b.date.startsWith(now)).reduce((s,b)=>s+b.rams+b.ewes,0);document.getElementById('birthList').innerHTML=data.births.map(b=>{const dr=data.deaths.filter(d=>d.type==='مواليد'&&String(d.mother)===String(b.mother)).reduce((s,d)=>s+Number(d.rams||0),0),de=data.deaths.filter(d=>d.type==='مواليد'&&String(d.mother)===String(b.mother)).reduce((s,d)=>s+Number(d.ewes||0),0);return `<div class="item"><div class="itemhead"><h3>الأم رقم ${b.mother}</h3><span class="pill">${b.date}</span></div><p>العدد الأصلي: <b>${b.rams+b.ewes}</b> | الحي: <b>${Math.max(0,b.rams+b.ewes-dr-de)}</b> | النفوق: <b>${dr+de}</b></p><p>طليان: ${b.rams} — رخال: ${b.ewes} — العمر: ${birthAgeText(b.date)}</p><p class="muted">${b.desc||''}</p></div>`}).join('')||'<div class="empty">لا توجد مواليد</div>'}
+
+function deathTypeChanged(){const t=document.getElementById('dType').value,young=t==='مواليد';document.getElementById('dEweFields').querySelector('label').textContent=young?'رقم الأم':'رقم الحيوان';document.getElementById('dRamField').classList.toggle('hidden',!young);document.getElementById('dEweKidField').classList.toggle('hidden',!young);document.getElementById('dCount').classList.toggle('hidden',young)}
+function saveDeath(){const type=document.getElementById('dType').value,date=document.getElementById('dDate').value||today(),mother=document.getElementById('dMother').value.trim(),count=+document.getElementById('dCount').value||1,r=type==='مواليد'?+document.getElementById('dRams').value||0:0,e=type==='مواليد'?+document.getElementById('dEwes').value||0:0;if(!mother)return showToast('أدخل الرقم');if(type==='مواليد'&&r+e<1)return showToast('أدخل عدد النافق');if(type==='مواليد'){const available=liveBirths();if(r>available.rams||e>available.ewes)return showToast('العدد أكبر من المواليد الموجودة');}confirmAction('⚠️ تأكيد تسجيل النفوق',`سيتم تسجيل نفوق ${type==='مواليد'?(r+e)+' من المواليد للأم رقم '+mother:count+' من '+type}. هل أنت متأكد؟`,()=>{data.deaths.push({id:uid(),type,date,mother,count,rams:r,ewes:e,reason:document.getElementById('dReason').value});log('نفوق',`نفوق ${type} — ${mother} — ${type==='مواليد'?r+e:count}`);hideForm('deathForm');save();showToast('تم تسجيل النفوق')})}
+function renderDeaths(){document.getElementById('deathTotal').textContent=data.deaths.reduce((s,d)=>s+(d.type==='مواليد'?d.rams+d.ewes:d.count),0);document.getElementById('deathMonth').textContent=data.deaths.filter(d=>d.date.startsWith(today().slice(0,7))).reduce((s,d)=>s+(d.type==='مواليد'?d.rams+d.ewes:d.count),0);document.getElementById('deathYoung').textContent=data.deaths.filter(d=>d.type==='مواليد').reduce((s,d)=>s+d.rams+d.ewes,0);document.getElementById('deathEwes').textContent=data.deaths.filter(d=>d.type==='نعجة').reduce((s,d)=>s+d.count,0);document.getElementById('deathList').innerHTML=data.deaths.map(d=>`<div class="item"><div class="itemhead"><h3>☠️ ${d.type}</h3><span class="pill">${d.date}</span></div><p>${d.type==='مواليد'?`الأم ${d.mother} — طليان ${d.rams} — رخال ${d.ewes}`:`رقم ${d.mother} — العدد ${d.count}`}</p><p class="muted">${d.reason||''}</p></div>`).join('')||'<div class="empty">لا يوجد نفوق مسجل</div>'}
+
+function calcPurchaseInputs(){document.getElementById('pCalc').textContent=money((+document.getElementById('pQty').value||0)*(+document.getElementById('pPrice').value||0))}
+document.getElementById('pQty').addEventListener('input',calcPurchaseInputs);document.getElementById('pPrice').addEventListener('input',calcPurchaseInputs);
+function savePurchase(){const qty=+document.getElementById('pQty').value||0,price=+document.getElementById('pPrice').value||0;if(qty<=0||price<0)return showToast('أدخل الكمية والسعر');let type=document.getElementById('pType').value;if(type==='أخرى')type=document.getElementById('pOtherText').value.trim()||'أخرى';data.purchases.push({id:uid(),type,qty,price,total:qty*price,date:document.getElementById('pDate').value||today(),note:document.getElementById('pNote').value});log('مشتريات',`${type} — ${qty} × ${price}`);hideForm('purchaseForm');save();showToast('تم حفظ المشتريات')}
+function renderPurchases(){const total=data.purchases.reduce((s,x)=>s+x.total,0),m=today().slice(0,7),y=today().slice(0,4);document.getElementById('purchaseTotal').textContent=money(total);document.getElementById('purchaseMonth').textContent=money(data.purchases.filter(x=>x.date.startsWith(m)).reduce((s,x)=>s+x.total,0));document.getElementById('purchaseYear').textContent=money(data.purchases.filter(x=>x.date.startsWith(y)).reduce((s,x)=>s+x.total,0));document.getElementById('purchaseCount').textContent=data.purchases.length;document.getElementById('purchaseList').innerHTML=data.purchases.map(x=>`<div class="item"><div class="itemhead"><h3>🛒 ${x.type}</h3><span class="pill">${x.date}</span></div><p>الكمية: ${x.qty} — سعر الوحدة: ${money(x.price)} — <b>${money(x.total)} ريال</b></p></div>`).join('')||'<div class="empty">لا توجد مشتريات</div>'}
+function saveExpense(){const amount=+document.getElementById('xAmount').value||0;if(amount<=0)return showToast('أدخل المبلغ');let type=document.getElementById('xType').value;if(type==='أخرى')type=document.getElementById('xOtherText').value.trim()||'أخرى';data.expenses.push({id:uid(),type,amount,date:document.getElementById('xDate').value||today(),note:document.getElementById('xNote').value});log('مصاريف',`${type} — ${amount}`);hideForm('expenseForm');save();showToast('تم حفظ المصروف')}
+function renderExpenses(){const total=data.expenses.reduce((s,x)=>s+x.amount,0),m=today().slice(0,7),y=today().slice(0,4);document.getElementById('expenseTotal').textContent=money(total);document.getElementById('expenseMonth').textContent=money(data.expenses.filter(x=>x.date.startsWith(m)).reduce((s,x)=>s+x.amount,0));document.getElementById('expenseYear').textContent=money(data.expenses.filter(x=>x.date.startsWith(y)).reduce((s,x)=>s+x.amount,0));document.getElementById('expenseCount').textContent=data.expenses.length;document.getElementById('expenseList').innerHTML=data.expenses.map(x=>`<div class="item"><div class="itemhead"><h3>💰 ${x.type}</h3><span class="pill">${x.date}</span></div><p><b>${money(x.amount)} ريال</b> ${x.note||''}</p></div>`).join('')||'<div class="empty">لا توجد مصاريف</div>'}
+
+function saleTypeChanged(){document.getElementById('sAnimalNo').classList.toggle('hidden',!['نعجة','فحل'].includes(document.getElementById('sType').value))}
+document.getElementById('sQty').addEventListener('input',()=>document.getElementById('sCalc').textContent=money((+document.getElementById('sQty').value||0)*(+document.getElementById('sPrice').value||0)));document.getElementById('sPrice').addEventListener('input',()=>document.getElementById('sCalc').textContent=money((+document.getElementById('sQty').value||0)*(+document.getElementById('sPrice').value||0)));
+function saveSale(){const type=document.getElementById('sType').value,qty=+document.getElementById('sQty').value||0,price=+document.getElementById('sPrice').value||0;if(qty<1)return showToast('أدخل العدد');const total=qty*price;data.sales.push({id:uid(),type,qty,price,total,no:document.getElementById('sNo').value.trim(),buyer:document.getElementById('sBuyer').value.trim(),phone:document.getElementById('sPhone').value.trim(),date:document.getElementById('sDate').value||today()});upsertBuyer(document.getElementById('sBuyer').value.trim(),document.getElementById('sPhone').value.trim());log('بيع',`${type} — ${qty} — ${total} ريال`);hideForm('saleForm');save();showToast('تم حفظ البيع')}
+function renderSales(){const total=data.sales.reduce((s,x)=>s+x.total,0),m=today().slice(0,7),y=today().slice(0,4);document.getElementById('salesTotal').textContent=money(total);document.getElementById('salesMonth').textContent=money(data.sales.filter(x=>x.date.startsWith(m)).reduce((s,x)=>s+x.total,0));document.getElementById('salesYear').textContent=money(data.sales.filter(x=>x.date.startsWith(y)).reduce((s,x)=>s+x.total,0));document.getElementById('salesHeads').textContent=data.sales.reduce((s,x)=>s+x.qty,0);document.getElementById('saleList').innerHTML=data.sales.map(x=>`<div class="item"><div class="itemhead"><h3>💵 ${x.type} × ${x.qty}</h3><span class="pill">${x.date}</span></div><p>المشتري: ${x.buyer||'غير مسجل'} — الإجمالي: <b>${money(x.total)} ريال</b></p><div class="actions">${x.phone?`<button class="secondary" onclick="wa('${x.phone}')">🟢 واتساب</button>`:''}<button class="secondary" onclick="editSale('${x.id}')">✏️ تعديل</button><button class="danger" onclick="deleteSale('${x.id}')">🗑️ حذف</button></div></div>`).join('')||'<div class="empty">لا توجد مبيعات</div>'}
+
+function editSale(id){
+  const x=data.sales.find(s=>s.id===id);
+  if(!x)return;
+  document.getElementById('sType').value=x.type;
+  document.getElementById('sQty').value=x.qty;
+  document.getElementById('sNo').value=x.no||'';
+  document.getElementById('sPrice').value=x.price;
+  document.getElementById('sBuyer').value=x.buyer||'';
+  document.getElementById('sPhone').value=x.phone||'';
+  document.getElementById('sDate').value=x.date;
+  saleTypeChanged();
+  document.getElementById('sCalc').textContent=money(x.total);
+  showForm('saleForm');
+  document.querySelector('#saleForm .primary').textContent='💾 حفظ التعديل';
+  document.querySelector('#saleForm .primary').onclick=()=>updateSale(id);
+}
+function updateSale(id){
+  const x=data.sales.find(s=>s.id===id);
+  if(!x)return;
+  const type=document.getElementById('sType').value;
+  const qty=+document.getElementById('sQty').value||0;
+  const price=+document.getElementById('sPrice').value||0;
+  if(qty<1)return showToast('أدخل العدد');
+  x.type=type;x.qty=qty;x.price=price;x.total=qty*price;
+  x.no=document.getElementById('sNo').value.trim();
+  x.buyer=document.getElementById('sBuyer').value.trim();
+  x.phone=document.getElementById('sPhone').value.trim();
+  x.date=document.getElementById('sDate').value||today();
+  upsertBuyer(x.buyer,x.phone);
+  log('بيع',`تعديل عملية بيع ${type} — ${qty} — ${x.total} ريال`);
+  document.querySelector('#saleForm .primary').textContent='💾 حفظ البيع';
+  document.querySelector('#saleForm .primary').onclick=saveSale;
+  hideForm('saleForm');
+  save();
+  showToast('تم تعديل البيع');
+}
+function deleteSale(id){
+  const x=data.sales.find(s=>s.id===id);
+  if(!x)return;
+  confirmAction('⚠️ تأكيد حذف البيع',`هل أنت متأكد من حذف بيع ${x.type} × ${x.qty} بمبلغ ${money(x.total)} ريال؟`,()=>{
+    data.sales=data.sales.filter(s=>s.id!==id);
+    data.buyers.forEach(b=>b.sales=data.sales.filter(s=>s.buyer===b.name));
+    log('بيع',`تم حذف عملية بيع ${x.type} — ${x.qty} — ${x.total} ريال`);
+    save();
+    showToast('تم حذف البيع');
+  });
+}
+
+function wa(phone){const p=String(phone).replace(/\D/g,'').replace(/^0/,'966');const msg=`السلام عليكم ورحمة الله وبركاته 🌹\nحياكم الله في حلال أبو خالد 🐑\nيتوفر لدينا من وقت لآخر حلال طيب ومختار بعناية، ويسعدنا خدمتكم والتعامل معكم.\nللاستفسار والطلب تواصلوا معنا، وحياكم الله في كل وقت.\n\nأخوكم أبو خالد\nعزيز مصلح الجهني\n📱 0564554878`;window.open('https://wa.me/'+p+'?text='+encodeURIComponent(msg),'_blank')}
+
+function saveVaccine(){let type=document.getElementById('vType').value;if(type==='أخرى')type=document.getElementById('vOtherText').value.trim()||'أخرى';data.vaccines.push({id:uid(),group:document.getElementById('vGroup').value,type,no:document.getElementById('vNo').value.trim(),date:document.getElementById('vDate').value||today(),note:document.getElementById('vNote').value});log('تطعيم',`${type} — ${document.getElementById('vGroup').value}`);hideForm('vacForm');save();showToast('تم حفظ التطعيم')}
+function renderVaccines(){const now=today();let due=0,late=0;const rows=data.vaccines.map(v=>{const next=addMonths(v.date,v.type==='دود'?3:6),d=diffDays(now,next);if(d<0)late++;else if(d<=7)due++;return `<div class="item"><div class="itemhead"><h3>💉 ${v.type}</h3><span class="pill">${v.group}</span></div><p>تاريخ التطعيم: ${v.date} — القادم: ${next}</p><p class="${d<0?'bad':d<=7?'warn':''}">${d<0?'⚠️ متأخر '+Math.abs(d)+' يوم':'باقي '+d+' يوم'}</p></div>`}).join('');document.getElementById('vacDue').textContent=due;document.getElementById('vacLate').textContent=late;document.getElementById('vacAll').textContent=data.vaccines.length;document.getElementById('vacList').innerHTML=rows||'<div class="empty">لا توجد تطعيمات</div>'}
+
+function calcInv(){const t=(+iEwes.value||0)+(+iRams.value||0)+(+iYoungEwes.value||0)+(+iBucks.value||0);iTotal.textContent=t;iCompare.textContent=t===currentHerd()?'✅ مطابق لعدد الحلال':t<currentHerd()?`🔴 نقص ${currentHerd()-t} رأس`:`🟢 زيادة ${t-currentHerd()} رأس`}
+[iEwes,iRams,iYoungEwes,iBucks].forEach(x=>x.addEventListener('input',calcInv));
+function saveInventory(){const obj={id:uid(),ewes:+iEwes.value||0,rams:+iRams.value||0,youngEwes:+iYoungEwes.value||0,bucks:+iBucks.value||0,total:(+iEwes.value||0)+(+iRams.value||0)+(+iYoungEwes.value||0)+(+iBucks.value||0),date:iDate.value||today(),note:iNote.value};data.inventory.unshift(obj);log('جرد',`جرد ${obj.total} رأس`);save();showToast('تم حفظ الجرد')}
+function renderInventory(){document.getElementById('inventoryList').innerHTML=data.inventory.map(i=>`<div class="item"><div class="itemhead"><h3>📦 جرد ${i.total} رأس</h3><span class="pill">${i.date}</span></div><p>نعاج ${i.ewes} — طليان ${i.rams} — رخال ${i.youngEwes} — فحول ${i.bucks}</p><p>${i.total===currentHerd()?'✅ مطابق':i.total<currentHerd()?'🔴 نقص '+(currentHerd()-i.total):'🟢 زيادة '+(i.total-currentHerd())}</p></div>`).join('')||'<div class="empty">لا توجد جردات</div>'}
+
+function renderEweReport(){const q=document.getElementById('eweReportSearch').value.trim();document.getElementById('eweReportList').innerHTML=data.ewes.filter(e=>!q||String(e.no).includes(q)).map(e=>{const s=eweStats(e),late=lateFor(e),next=expectedFor(e);return `<div class="item"><h3>🐑 النعجة رقم ${e.no}</h3><p>العمر: ${eweAgeText(e)} — الحالة: ${e.status}</p><p>الولادات: ${s.bs.length} — إجمالي المواليد: ${s.r+s.q} — <b>نفوق مواليدها: ${s.dr+s.dq}</b> — <b>المواليد الحية: ${s.live}</b></p><p>طليان: ${s.r} — نفوق الطليان: ${s.dr} — الطليان الحية: <b>${Math.max(0,s.r-s.dr)}</b></p><p>رخال: ${s.q} — نفوق الرخال: ${s.dq} — الرخال الحية: <b>${Math.max(0,s.q-s.dq)}</b></p><p>آخر ولادة: ${s.last?s.last.date:'لا توجد'} — القادمة: ${next||'غير محددة'}</p><p class="${late!=null?'bad':'pill'}">${late!=null?'🔴 متأخرة '+late+' يوم':next?'باقي '+diffDays(today(),next)+' يوم':'لا يوجد موعد'}</p></div>`}).join('')||'<div class="empty">لا توجد بيانات</div>'}
+function periodStart(v){const d=new Date();if(v==='month')d.setMonth(d.getMonth()-1);if(v==='3m')d.setMonth(d.getMonth()-3);if(v==='6m')d.setMonth(d.getMonth()-6);if(v==='year')d.setFullYear(d.getFullYear()-1);return d.toISOString().slice(0,10)}
+function renderBirthReport(){
+  const live=liveBirths();
+  document.getElementById('brLive').textContent=live.total;
+  document.getElementById('brRams').textContent=live.rams;
+  document.getElementById('brEwes').textContent=live.ewes;
+  const m=today().slice(0,7);
+  document.getElementById('brMonth').textContent=data.births.filter(b=>b.date.startsWith(m)).reduce((s,b)=>s+b.rams+b.ewes,0);
+  document.getElementById('brDeathMonth').textContent=data.deaths.filter(d=>d.date.startsWith(m)).reduce((s,d)=>s+(d.type==='مواليد'?d.rams+d.ewes:d.count),0);
+  document.getElementById('brMothers').textContent=new Set(data.births.filter(b=>b.date.startsWith(m)).map(b=>b.mother)).size;
+
+  const st=periodStart(document.getElementById('brPeriod').value);
+  const birthsInPeriod=data.births.filter(b=>b.date>=st);
+
+  const mothers=[...new Set(birthsInPeriod.map(b=>String(b.mother)))];
+  document.getElementById('birthReportList').innerHTML=mothers.map(mother=>{
+    const rows=data.births.filter(b=>String(b.mother)===mother);
+    const originalR=rows.reduce((s,b)=>s+Number(b.rams||0),0);
+    const originalE=rows.reduce((s,b)=>s+Number(b.ewes||0),0);
+    const deaths=data.deaths.filter(d=>d.type==='مواليد'&&String(d.mother)===mother);
+    const deadR=deaths.reduce((s,d)=>s+Number(d.rams||0),0);
+    const deadE=deaths.reduce((s,d)=>s+Number(d.ewes||0),0);
+    const liveR=Math.max(0,originalR-deadR);
+    const liveE=Math.max(0,originalE-deadE);
+    const original=originalR+originalE;
+    const dead=deadR+deadE;
+    const liveNow=liveR+liveE;
+    const last=rows.slice().sort((a,b)=>b.date.localeCompare(a.date))[0];
+
+    return `<div class="item">
+      <div class="itemhead">
+        <h3>👩‍🍼 الأم رقم ${mother}</h3>
+        <span class="pill">${last?.date||''}</span>
+      </div>
+      <p><b>إجمالي المواليد:</b> ${original} — <b>النفوق:</b> ${dead} — <b>المواليد الحالية الحية:</b> ${liveNow}</p>
+      <p>طليان: ${originalR} — نفوق الطليان: ${deadR} — الطليان الحية: <b>${liveR}</b></p>
+      <p>رخال: ${originalE} — نفوق الرخال: ${deadE} — الرخال الحية: <b>${liveE}</b></p>
+      <p>عدد الولادات: ${rows.length} — آخر ولادة: ${last?.date||'لا توجد'}</p>
+    </div>`;
+  }).join('')||'<div class="empty">لا توجد مواليد للفترة</div>';
+}
+function buildAlerts(){const a=[];for(const e of data.ewes){const n=expectedFor(e),late=lateFor(e);if(late!=null)a.push({level:'bad',text:`النعجة ${e.no} متأخرة ${late} يوم`});else if(n){const d=diffDays(today(),n);if(d>=0&&d<=30)a.push({level:'warn',text:`النعجة ${e.no} — باقي ${d} يوم على الولادة المتوقعة`})}}for(const v of data.vaccines){const n=addMonths(v.date,v.type==='دود'?3:6),d=diffDays(today(),n);if(d<0)a.push({level:'bad',text:`تطعيم ${v.type} متأخر ${Math.abs(d)} يوم`});else if(d<=7)a.push({level:'warn',text:`تطعيم ${v.type} — باقي ${d} يوم`})}return a}
+function renderAlerts(){const a=buildAlerts();const birth=a.filter(x=>x.text.includes('الولادة')).length,late=a.filter(x=>x.text.includes('متأخرة')).length,vac=a.filter(x=>x.text.includes('تطعيم')).length;document.getElementById('aBirth').textContent=birth;document.getElementById('aLate').textContent=late;document.getElementById('aVac').textContent=vac;document.getElementById('aTotal').textContent=a.length;document.getElementById('alertList').innerHTML=a.sort((x,y)=>x.level==='bad'?-1:1).map(x=>`<div class="item ${x.level==='bad'?'bad':'warn'}"><b>${x.level==='bad'?'🔴':'🟡'} ${x.text}</b></div>`).join('')||'<div class="empty">لا توجد تنبيهات 🎉</div>'}
+function renderProduction(){const q=document.getElementById('prodSearch').value.trim(),per=document.getElementById('prodPeriod').value,st=per==='year'?today().slice(0,4)+'-01-01':per==='12m'?periodStart('year'):'0000-01-01';document.getElementById('productionList').innerHTML=data.ewes.filter(e=>!q||String(e.no).includes(q)).map(e=>{const bs=eweStats(e).bs.filter(b=>b.date>=st),s=eweStats(e),next=expectedFor(e),late=lateFor(e);const original=s.r+s.q,dead=s.dr+s.dq; return `<div class="item"><h3>🏆 النعجة ${e.no}</h3><p>الولادات: ${bs.length} — إجمالي مواليدها: ${original} — النفوق: ${dead} — <b>المواليد الحية: ${s.live}</b></p><p>طليان: ${Math.max(0,s.r-s.dr)} — رخال: ${Math.max(0,s.q-s.dq)}</p><p>آخر ولادة: ${s.last?s.last.date:'لا توجد'} — القادمة: ${next||'لا توجد'} — ${late!=null?'🔴 متأخرة '+late+' يوم':next?'باقي '+diffDays(today(),next)+' يوم':''}</p></div>`}).join('')||'<div class="empty">لا توجد نعاج</div>'}
+function renderSeason(){const q=document.getElementById('seasonSearch').value.trim();let arr=data.ewes.map(e=>({e,n:expectedFor(e),late:lateFor(e)})).filter(x=>x.n&&(!q||String(x.e.no).includes(q))).sort((a,b)=>a.n.localeCompare(b.n));document.getElementById('seasonMonth').textContent=arr.filter(x=>x.n.startsWith(today().slice(0,7))).length;document.getElementById('seasonSoon').textContent=arr.filter(x=>{const d=diffDays(today(),x.n);return d>=0&&d<=30}).length;document.getElementById('seasonLate').textContent=arr.filter(x=>x.late!=null).length;document.getElementById('seasonTotal').textContent=arr.length;document.getElementById('seasonList').innerHTML=arr.map(x=>`<div class="item"><h3>🐑 النعجة ${x.e.no}</h3><p>آخر ولادة: ${eweStats(x.e).last?.date||'—'} — المتوقعة: ${x.n}</p><p class="${x.late!=null?'bad':'pill'}">${x.late!=null?'🔴 متأخرة '+x.late+' يوم':'باقي '+Math.max(0,diffDays(today(),x.n))+' يوم'}</p></div>`).join('')||'<div class="empty">لا توجد نعاج لها موعد متوقع</div>'}
+function totalsFor(period){const st=periodStart(period),f=x=>x.date>=st;return{sales:data.sales.filter(f).reduce((s,x)=>s+x.total,0),purchases:data.purchases.filter(f).reduce((s,x)=>s+x.total,0),expenses:data.expenses.filter(f).reduce((s,x)=>s+x.amount,0)}}
+function renderProfit(){const t=totalsFor(document.getElementById('profitPeriod').value);document.getElementById('prSales').textContent=money(t.sales);document.getElementById('prPurchases').textContent=money(t.purchases);document.getElementById('prExpenses').textContent=money(t.expenses);document.getElementById('prNet').textContent=money(t.sales-t.purchases-t.expenses);document.getElementById('profitMonths').innerHTML=Array.from({length:12},(_,i)=>i+1).map(m=>{const y=today().slice(0,4),mm=String(m).padStart(2,'0'),p=data.sales.filter(x=>x.date.startsWith(y+'-'+mm)).reduce((s,x)=>s+x.total,0),q=data.purchases.filter(x=>x.date.startsWith(y+'-'+mm)).reduce((s,x)=>s+x.total,0),e=data.expenses.filter(x=>x.date.startsWith(y+'-'+mm)).reduce((s,x)=>s+x.amount,0);return `<div class="item"><b>${mm}/${y}</b> — بيع ${money(p)} — شراء ${money(q)} — مصاريف ${money(e)} — النتيجة <b>${money(p-q-e)}</b></div>`}).join('')}
+function renderSummary(){const live=liveBirths(),deaths=data.deaths.reduce((s,d)=>s+(d.type==='مواليد'?d.rams+d.ewes:d.count),0),sales=data.sales.reduce((s,x)=>s+x.total,0),pur=data.purchases.reduce((s,x)=>s+x.total,0),exp=data.expenses.reduce((s,x)=>s+x.amount,0);document.getElementById('summaryBody').innerHTML=`<div class="item"><h3>🐑 الحلال</h3><p>عدد الحلال الحالي: <b>${currentHerd()}</b> — النعاج المنتجة: <b>${data.ewes.length}</b></p><p>الطليان الحالي: ${live.rams} — الرخال الحالي: ${live.ewes}</p></div><div class="item"><h3>💙 المواليد</h3><p>إجمالي المواليد الحالي: <b>${live.total}</b> — نفوق المواليد: ${data.deaths.filter(d=>d.type==='مواليد').reduce((s,d)=>s+d.rams+d.ewes,0)}</p></div><div class="item"><h3>☠️ النفوق</h3><p>إجمالي النفوق: <b>${deaths}</b> — هذا الشهر: ${data.deaths.filter(d=>d.date.startsWith(today().slice(0,7))).reduce((s,d)=>s+(d.type==='مواليد'?d.rams+d.ewes:d.count),0)}</p></div><div class="item"><h3>💰 المالية</h3><p>البيع ${money(sales)} — المشتريات ${money(pur)} — المصاريف ${money(exp)} — <b>النتيجة ${money(sales-pur-exp)}</b></p></div><div class="item"><h3>🔔 المتابعة</h3><p>المتأخرة: ${data.ewes.filter(e=>lateFor(e)!=null).length} — قرب الولادة: ${buildAlerts().filter(a=>a.text.includes('الولادة')).length} — تنبيهات التطعيم: ${buildAlerts().filter(a=>a.text.includes('تطعيم')).length}</p></div>`}
+function renderActivity(){const per=document.getElementById('actPeriod').value,typ=document.getElementById('actType').value,q=document.getElementById('actSearch').value.trim(),st=periodStart(per==='today'?'month':per);let arr=data.activities.filter(a=>(per==='today'?a.date.slice(0,10)===today():a.date.slice(0,10)>=st)&&(typ==='all'||a.type===typ)&&(!q||a.text.includes(q)));document.getElementById('activityList').innerHTML=arr.map(a=>`<div class="item"><div class="itemhead"><b>${a.type}</b><span class="pill">${new Date(a.date).toLocaleString('ar-SA')}</span></div><p>${a.text}</p></div>`).join('')||'<div class="empty">لا توجد حركات</div>'}
+function upsertBuyer(name,phone){if(!name)return;let b=data.buyers.find(x=>x.name===name);if(!b){b={id:uid(),name,phone,sales:[]};data.buyers.push(b)}else if(phone)b.phone=phone;b.sales=data.sales.filter(s=>s.buyer===name)}
+function renderBuyers(){data.buyers.forEach(b=>b.sales=data.sales.filter(s=>s.buyer===b.name));const q=document.getElementById('buyerSearch').value.trim(),arr=data.buyers.filter(b=>!q||b.name.includes(q)||b.phone.includes(q));document.getElementById('buyerCount').textContent=data.buyers.length;document.getElementById('buyerSales').textContent=data.sales.length;document.getElementById('buyerTotal').textContent=money(data.sales.reduce((s,x)=>s+x.total,0));document.getElementById('buyerList').innerHTML=arr.map(b=>{const total=b.sales.reduce((s,x)=>s+x.total,0);return `<div class="item"><div class="itemhead"><h3>${b.name} ${b.sales.length>1?'⭐ مشتري دائم':''}</h3><span class="pill">${b.sales.length} عملية</span></div><p>📱 ${b.phone||'—'} — إجمالي مشترياته: <b>${money(total)} ريال</b></p>${b.phone?`<button class="secondary" onclick="wa('${b.phone}')">🟢 واتساب</button>`:''}<details style="margin-top:8px"><summary>📋 سجل المشتري</summary><p>${b.sales.map(s=>`${s.date} — ${s.type} × ${s.qty} — ${money(s.total)} ريال`).join('<br>')||'لا توجد عمليات'}</p></details></div>`}).join('')||'<div class="empty">لا يوجد مشترون</div>'}
+function saveTreatment(){const name=document.getElementById('tName').value.trim();if(!name)return showToast('اكتب اسم العلاج');data.treatments.push({id:uid(),name,dose:document.getElementById('tDose').value,route:document.getElementById('tRoute').value,note:document.getElementById('tNote').value});log('علاج',`إضافة علاج ${name}`);hideForm('treatmentForm');save();showToast('تم حفظ العلاج')}
+function renderTreatments(){const q=document.getElementById('treatSearch').value.trim().toLowerCase();const arr=data.treatments.filter(t=>!q||t.name.toLowerCase().includes(q));document.getElementById('treatmentList').innerHTML=arr.map(t=>`<div class="item"><h3>💊 ${t.name}</h3><p>الجرعة: <b>${t.dose||'—'} سانتي</b> — طريقة الإعطاء: <b>${t.route}</b></p><p class="muted">${t.note||''}</p></div>`).join('')||'<div class="empty">لا توجد علاجات</div>'}
+function downloadBackup(){const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=`حلال-أبو-خالد-${today()}.json`;a.click();data.meta.lastBackup=new Date().toLocaleString('ar-SA');localStorage.setItem(KEY,JSON.stringify(data));document.getElementById('lastBackup').textContent='آخر نسخة: '+data.meta.lastBackup}
+function restoreBackup(ev){const f=ev.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{let incoming;try{incoming=JSON.parse(r.result)}catch(e){return showToast('الملف غير صالح')};confirmAction('⚠️ تأكيد الاستعادة','سيتم استبدال البيانات الحالية بعد إنشاء نسخة أمان منها. هل أنت متأكد؟',()=>{const safety=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(safety);a.download=`نسخة-أمان-قبل-الاستعادة-${today()}.json`;a.click();data=incoming;localStorage.setItem(KEY,JSON.stringify(data));renderCurrent();showToast('تمت الاستعادة')})};r.readAsText(f)}
+function archiveYear(section){const y=today().slice(0,4);data.archives.push({id:uid(),section,year:y,date:today(),data:JSON.parse(JSON.stringify(data[section]))});log('أرشيف',`أرشفة ${section} لسنة ${y}`);save();showToast('تمت الأرشفة')}
+document.getElementById('iDate').value=today();document.getElementById('eweDate').value=today();document.getElementById('bDate').value=today();document.getElementById('dDate').value=today();document.getElementById('pDate').value=today();document.getElementById('xDate').value=today();document.getElementById('sDate').value=today();document.getElementById('vDate').value=today();
+updateHome();
+setInterval(()=>{updateHome();if(document.querySelector('.page.active')?.id==='alerts')renderAlerts()},60000);
+</script>
+
+<div id="activationGate" style="display:none;position:fixed;inset:0;z-index:99999;background:#073b2b;color:white;padding:22px;overflow:auto">
+  <div style="max-width:520px;margin:7vh auto;background:#0b513b;border-radius:22px;padding:24px;box-shadow:0 12px 35px #0007;text-align:center">
+    <div style="font-size:54px">🐑</div>
+    <h2 style="margin:8px 0">تفعيل حلال أبو خالد</h2>
+    <p style="opacity:.9">هذا الجهاز يحتاج تفعيل مرة واحدة فقط.</p>
+    <div style="text-align:right;margin-top:18px">
+      <label>رقم الجهاز</label>
+      <div id="activationDeviceId" style="direction:ltr;background:white;color:#123;padding:13px;border-radius:12px;margin:7px 0 14px;font-weight:bold;user-select:all"></div>
+      <button type="button" onclick="copyActivationDeviceId()" style="width:100%;margin-bottom:14px">نسخ رقم الجهاز</button>
+      <label>كود التفعيل</label>
+      <input id="activationCodeInput" inputmode="text" autocomplete="off" placeholder="اكتب كود التفعيل" style="direction:ltr;text-transform:uppercase;width:100%;box-sizing:border-box;margin-top:7px">
+      <button type="button" onclick="activateThisDevice()" style="width:100%;margin-top:15px">تفعيل الجهاز</button>
+      <div id="activationMsg" style="min-height:24px;margin-top:12px;color:#ffd6d6"></div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+const AK_ACTIVATION_SALT='HALAL-ABU-KHALID-PERMANENT-2026-v1';
+
+function akRandomHex(n=16){
+  const a=new Uint8Array(n);
+  crypto.getRandomValues(a);
+  return Array.from(a,b=>b.toString(16).padStart(2,'0')).join('').toUpperCase();
+}
+function getActivationDeviceId(){
+  const keys=['akPermanentDeviceId','halalDeviceId','deviceId','akDeviceId'];
+  let id='';
+  for(const k of keys){
+    const v=localStorage.getItem(k);
+    if(v && /^AK-[A-F0-9]{8}-[A-F0-9]{8}$/i.test(v)){ id=v.toUpperCase(); break; }
+  }
+  if(!id){
+    id='AK-'+akRandomHex(4)+'-'+akRandomHex(4);
+  }
+  // Persist the same ID under the permanent key every time.
+  localStorage.setItem('akPermanentDeviceId',id);
+  return id;
+}
+async function akActivationCodeFor(deviceId){
+  const raw=(deviceId.trim().toUpperCase()+'|'+AK_ACTIVATION_SALT);
+  const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(raw));
+  const h=Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('').toUpperCase();
+  return 'AK-'+h.slice(0,4)+'-'+h.slice(4,8)+'-'+h.slice(8,12);
+}
+async function isThisDeviceActivated(){
+  const id=getActivationDeviceId();
+  const saved=localStorage.getItem('akPermanentActivation');
+  if(!saved)return false;
+  const expected=await akActivationCodeFor(id);
+  return saved===expected;
+}
+async function activateThisDevice(){
+  const id=getActivationDeviceId();
+  const entered=(document.getElementById('activationCodeInput').value||'').trim().toUpperCase();
+  const expected=await akActivationCodeFor(id);
+  const msg=document.getElementById('activationMsg');
+  if(entered===expected){
+    localStorage.setItem('akPermanentActivation',expected);
+    msg.style.color='#bfffd0';
+    msg.textContent='تم تفعيل الجهاز بشكل دائم ✓';
+    setTimeout(()=>{document.getElementById('activationGate').style.display='none';},500);
+  }else{
+    msg.style.color='#ffd6d6';
+    msg.textContent='كود التفعيل غير صحيح';
+  }
+}
+function copyActivationDeviceId(){
+  const id=getActivationDeviceId();
+  if(navigator.clipboard) navigator.clipboard.writeText(id);
+  const msg=document.getElementById('activationMsg');
+  msg.style.color='#bfffd0'; msg.textContent='تم نسخ رقم الجهاز';
+}
+async function enforcePermanentActivation(){
+  const id=getActivationDeviceId();
+  const box=document.getElementById('activationDeviceId');
+  if(box)box.textContent=id;
+  if(!(await isThisDeviceActivated())){
+    document.getElementById('activationGate').style.display='block';
+  }
+}
+window.addEventListener('DOMContentLoaded',enforcePermanentActivation);
+</script>
+
+</body>
+</html>
