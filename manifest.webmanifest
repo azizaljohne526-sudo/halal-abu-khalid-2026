@@ -1,0 +1,11 @@
+{
+  "name": "حلال أبو خالد",
+  "short_name": "حلال أبو خالد",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4fbf5",
+  "theme_color": "#2f8f46",
+  "lang": "ar",
+  "dir": "rtl"
+}

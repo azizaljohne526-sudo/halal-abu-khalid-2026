@@ -17,6 +17,10 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 .page{display:none}.page.active{display:block}.pagehead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:4px 0 13px}.pagehead h2{margin:0}.back{background:var(--green);color:#fff;border:0;border-radius:14px;padding:12px 20px;font-weight:700}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.primary{background:var(--green);color:#fff;border:0;border-radius:13px;padding:11px 16px;font-weight:700}.secondary{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:13px;padding:11px 16px}.danger{background:#fff0f0;color:var(--danger);border:1px solid #f0caca;border-radius:13px;padding:9px 13px}.dark .danger{background:#321b1b}.form{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.field label{display:block;font-size:13px;color:var(--muted);margin-bottom:5px}.field input,.field select,.field textarea{width:100%;padding:11px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--text)}.field textarea{min-height:90px}.wide{grid-column:1/-1}.hidden{display:none!important}.list{display:grid;gap:10px}.item{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:14px;box-shadow:var(--shadow)}.itemhead{display:flex;justify-content:space-between;gap:8px;align-items:center}.item h3{margin:0 0 8px}.muted{color:var(--muted)}.pill{display:inline-block;padding:4px 8px;border-radius:99px;background:#e9f7ed;color:var(--green);font-size:12px;font-weight:700}.dark .pill{background:#1c3a24}.warn{color:#9a6700;background:#fff4cf}.dark .warn{background:#4b3a13;color:#ffd86a}.bad{color:#b71c1c;background:#ffe5e5}.dark .bad{background:#461d1d;color:#ff9c9c}.mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}.mini{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:11px}.mini b{display:block;font-size:19px;color:var(--green)}.searchrow{display:flex;gap:8px;margin-bottom:12px}.searchrow input{flex:1;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--text)}.confirm{position:fixed;inset:0;background:#0008;display:none;align-items:center;justify-content:center;z-index:50;padding:20px}.confirm.show{display:flex}.dialog{max-width:480px;width:100%;background:var(--card);border-radius:20px;padding:20px;box-shadow:0 20px 60px #0006}.dialog h3{margin-top:0}.dialog-actions{display:flex;gap:8px;justify-content:flex-start;margin-top:16px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#17351f;color:#fff;padding:12px 18px;border-radius:13px;display:none;z-index:60}.toast.show{display:block}.empty{text-align:center;color:var(--muted);padding:28px}.photo{width:150px;height:150px;object-fit:cover;border-radius:50%;display:block;margin:8px auto 16px;border:5px solid #e2f2e5}
 @media(max-width:760px){.stats,.profit{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.form{grid-template-columns:1fr}.mini-grid{grid-template-columns:repeat(2,1fr)}.brand h1{font-size:23px}}
 </style>
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="حلال أبو خالد">
 </head>
 <body>
 <div class="app">
@@ -457,8 +461,16 @@ async function enforcePermanentActivation(){
     document.getElementById('activationGate').style.display='block';
   }
 }
-window.addEventListener('DOMContentLoaded',enforcePermanentActivation);
+// Permanent activation enabled
+window.addEventListener('load', enforcePermanentActivation);
 </script>
 
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(()=>{});
+  });
+}
+</script>
 </body>
 </html>
