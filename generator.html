@@ -78,7 +78,7 @@ async function generate(){
   const result=document.getElementById('result');
   const code=document.getElementById('code');
 
-  const id=normalizeDeviceId(input.value);
+  const id=normalizeDeviceId(input.value).match(/AK-[A-F0-9-]+/)?.[0] || '';
   error.textContent='';
   result.style.display='none';
 
